@@ -2,17 +2,17 @@
 
 const xprofiler = require('xprofiler');
 
-class AgentBootHook {
+class AppBootHook {
   constructor(app) {
     this.app = app;
+    this.config = app.config;
   }
 
   configDidLoad() {
-    const { xtransit } = this.app.config;
     xprofiler.start({
-      log_dir: xtransit.logdir,
+      log_dir: this.config.xtransit.logdir,
     });
   }
 }
 
-module.exports = AgentBootHook;
+module.exports = AppBootHook;

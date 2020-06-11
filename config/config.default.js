@@ -6,9 +6,7 @@ const path = require('path');
 module.exports = appInfo => {
   const config = {};
 
-  const appRoot = appInfo.env === 'local' || appInfo.env === 'unittest' ? appInfo.baseDir : appInfo.HOME;
-
-  const logdir = path.join(appRoot, 'logs/xprofiler');
+  const logdir = path.join(appInfo.root, 'logs/xprofiler');
   if (!fs.existsSync(logdir)) {
     fs.mkdirSync(logdir, { recursive: true });
   }
@@ -20,8 +18,8 @@ module.exports = appInfo => {
 
     disks: [],
     errors: [
-      path.join(appRoot, `logs/${appInfo.pkg.name}/common-error.log`),
-      path.join(appRoot, 'logs/stderr.log'),
+      path.join(appInfo.root, `logs/${appInfo.pkg.name}/common-error.log`),
+      path.join(appInfo.root, 'logs/stderr.log'),
     ],
     packages: [
       path.join(appInfo.baseDir, 'package.json'),
@@ -32,7 +30,7 @@ module.exports = appInfo => {
     ipMode: false,
     libMode: false,
     errexp: /\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/i,
-    logger: null,
+    logger: undefined,
     logLevel: 2,
   };
 

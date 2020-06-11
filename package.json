@@ -12,26 +12,26 @@
   ],
   "dependencies": {
     "xprofiler": "^1.2.1",
-    "xtransit": "^0.1.9-beta"
+    "xtransit": "^1.0.0"
   },
   "devDependencies": {
-    "autod": "^3.0.1",
+    "autod": "^3.1.0",
     "autod-egg": "^1.1.0",
-    "egg": "^2.16.0",
-    "egg-bin": "^4.11.0",
-    "egg-ci": "^1.11.0",
-    "egg-mock": "^3.21.0",
-    "eslint": "^5.13.0",
-    "eslint-config-egg": "^7.1.0"
+    "egg": "^2.26.1",
+    "egg-bin": "^4.14.1",
+    "egg-ci": "^1.15.0",
+    "egg-mock": "^4.0.0",
+    "eslint": "^7.2.0",
+    "eslint-config-egg": "^8.0.1"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=10.0.0"
   },
   "scripts": {
     "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
     "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
     "pkgfiles": "egg-bin pkgfiles",
     "autod": "autod"
@@ -42,7 +42,8 @@
     "app.js"
   ],
   "ci": {
-    "version": "8, 10"
+    "version": "10, 12",
+    "type": "github"
   },
   "repository": {
     "type": "git",
@@ -52,6 +53,6 @@
     "url": "https://github.com/eggjs/egg/issues"
   },
   "homepage": "https://github.com/eggjs/egg-xtransit#readme",
-  "author": "https://github.com/hyj1991",
+  "author": "hyj1991",
   "license": "MIT"
 }
