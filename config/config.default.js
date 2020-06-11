@@ -1,15 +1,9 @@
 'use strict';
 
-const fs = require('fs');
 const path = require('path');
 
 module.exports = appInfo => {
   const config = {};
-
-  const logdir = path.join(appInfo.root, 'logs/xprofiler');
-  if (!fs.existsSync(logdir)) {
-    fs.mkdirSync(logdir, { recursive: true });
-  }
 
   config.xtransit = {
     server: '',
@@ -25,7 +19,8 @@ module.exports = appInfo => {
       path.join(appInfo.baseDir, 'package.json'),
     ],
 
-    logdir,
+    logDir: 'xprofiler',
+    logInterval: undefined,
     docker: false,
     ipMode: false,
     libMode: false,
