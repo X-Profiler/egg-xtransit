@@ -20,7 +20,7 @@
 ## Install
 
 ```bash
-$ npm i egg-xtransit --save
+$ npm i --save egg-xtransit
 ```
 
 ## Usage
