@@ -1,9 +1,6 @@
 # egg-xtransit
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
@@ -14,15 +11,11 @@
 [codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-xtransit.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/eggjs/egg-xtransit?branch=master
 [david-image]: https://img.shields.io/david/eggjs/egg-xtransit.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-xtransit
+[david-url]: https://david-dm.org/x-profiler/egg-xtransit
 [snyk-image]: https://snyk.io/test/npm/egg-xtransit/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-xtransit
 [download-image]: https://img.shields.io/npm/dm/egg-xtransit.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-xtransit
-
-<!--
-Description here.
--->
 
 ## Install
 
@@ -34,7 +27,7 @@ $ npm i egg-xtransit --save
 
 ```js
 // {app_root}/config/plugin.js
-exports.eggXtransit = {
+exports.xtransit = {
   enable: true,
   package: 'egg-xtransit',
 };
@@ -44,20 +37,19 @@ exports.eggXtransit = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.eggXtransit = {
+exports.xtransit = {
+  server: '<xtransit-server address>',
+  appId: '<your appId>',
+  appSecret: '<your appSecret>'
 };
 ```
 
 see [config/config.default.js](config/config.default.js) for more detail.
 
-## Example
-
-<!-- example here -->
-
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/X-Profiler/egg-xtransit/issues).
 
 ## License
 
-[MIT](LICENSE)
+[BSD-2-Clause](LICENSE)
