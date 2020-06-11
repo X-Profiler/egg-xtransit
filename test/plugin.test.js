@@ -2,11 +2,11 @@
 
 const mock = require('egg-mock');
 
-describe('test/xtransit.test.js', () => {
+describe('test/plugin.test.js', () => {
   let app;
   before(() => {
     app = mock.app({
-      baseDir: 'apps/xtransit-test',
+      baseDir: 'example',
     });
     return app.ready();
   });

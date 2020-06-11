@@ -2,32 +2,31 @@
 
 const xtransit = require('xtransit');
 const xprofiler = require('xprofiler');
+const assert = require('assert');
 
 class AgentBootHook {
-  constructor(app) {
-    this.app = app;
+  constructor(agent) {
+    this.agent = agent;
+    this.config = agent.config;
+    this.logger = agent.coreLogger;
   }
 
   configDidLoad() {
-    const { xtransit } = this.app.config;
     xprofiler.start({
-      log_dir: xtransit.logdir,
+      log_dir: this.config.logdir,
     });
   }
 
   didLoad() {
-    const { xtransit: startConfig } = this.app.config;
-    if (!startConfig.server || !startConfig.appId || !startConfig.appSecret) {
-      this.app.logger.error('xtransit config error, server, appId, appSecret must be passed in.');
-      return;
-    }
+    const { server, appId, appSecret } = this.config.xtransit;
+    assert(server && appId && appSecret, 'xtransit config error, server, appId, appSecret must be passed in.');
 
     // start xtransit
-    const config = Object.assign(startConfig, {
-      logger: this.app.logger,
+    xtransit.start({
+      logger: this.logger,
+      ...this.config.xtransit,
     });
-    xtransit.start(config);
-    this.app.logger.info('xtransit start.');
+    this.logger.info('xtransit start.');
   }
 }
 

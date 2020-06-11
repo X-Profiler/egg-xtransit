@@ -6,4 +6,6 @@ coverage/
 run/
 .DS_Store
 *.swp
-
+package-lock.json
+yarn-lock.json
+.vscode
