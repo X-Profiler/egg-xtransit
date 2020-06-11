@@ -45,6 +45,7 @@ class AgentBootHook {
     // start xtransit
     xtransit.start({
       logger: this.logger,
+      logdir: this.config.xtransit.logDir,
       ...this.config.xtransit,
     });
     this.logger.info('xtransit start.');

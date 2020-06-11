@@ -18,7 +18,7 @@ class AppBootHook {
 
   configDidLoad() {
     xprofiler.start({
-      log_dir: this.config.xtransit.logdir,
+      log_dir: this.config.xtransit.logDir,
       log_interval: this.config.xtransit.logInterval,
     });
   }
