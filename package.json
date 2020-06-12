@@ -49,12 +49,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-xtransit.git"
+    "url": "git+https://github.com/X-Profiler/egg-xtransit.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/X-Profiler/xprofiler/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-xtransit#readme",
+  "homepage": "https://github.com/X-Profiler/egg-xtransit#readme",
   "author": "hyj1991",
   "license": "MIT"
 }
