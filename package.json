@@ -11,8 +11,8 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "xprofiler": "^1.2.1",
-    "xtransit": "^1.0.0"
+    "xprofiler": "^1.2.2",
+    "xtransit": "^1.1.1"
   },
   "devDependencies": {
     "assert-file": "^1.0.0",

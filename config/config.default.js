@@ -23,10 +23,9 @@ module.exports = appInfo => {
     logInterval: undefined,
     docker: false,
     ipMode: false,
-    libMode: false,
+    libMode: true,
     errexp: /\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/i,
     logger: undefined,
-    logLevel: 2,
   };
 
   return config;
