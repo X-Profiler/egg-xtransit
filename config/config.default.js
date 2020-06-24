@@ -26,6 +26,7 @@ module.exports = appInfo => {
     libMode: true,
     errexp: /\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/i,
     logger: undefined,
+    checkThrow: true,
   };
 
   return config;

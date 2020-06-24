@@ -7,4 +7,5 @@ exports.xtransit = {
   appId: '123456',
   appSecret: 'abc',
   logInterval: 1,
+  checkThrow: false,
 };
