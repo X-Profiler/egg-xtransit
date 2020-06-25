@@ -8,12 +8,18 @@ module.exports = {
     'test',
     'benchmark',
   ],
+  dep: [
+    'xprofiler',
+    'xtransit'
+  ],
   devdep: [
-    'egg',
-    'egg-ci',
-    'egg-bin',
+    'assert-file',
     'autod',
     'autod-egg',
+    'egg',
+    'egg-bin',
+    'egg-ci',
+    'egg-mock',
     'eslint',
     'eslint-config-egg',
   ],

@@ -35,6 +35,7 @@ class AgentBootHook {
     xprofiler.start({
       log_dir: this.config.xtransit.logDir,
       log_interval: this.config.xtransit.logInterval,
+      check_throw: this.config.xtransit.checkThrow,
     });
   }
 
