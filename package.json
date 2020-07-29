@@ -11,18 +11,18 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "xprofiler": "^1.2.3",
-    "xtransit": "^1.1.3"
+    "xprofiler": "^1.2.4",
+    "xtransit": "^1.2.0"
   },
   "devDependencies": {
     "assert-file": "^1.0.0",
     "autod": "^3.1.0",
     "autod-egg": "^1.1.0",
-    "egg": "^2.26.1",
-    "egg-bin": "^4.14.1",
+    "egg": "^2.27.0",
+    "egg-bin": "^4.15.0",
     "egg-ci": "^1.15.0",
     "egg-mock": "^4.0.0",
-    "eslint": "^7.3.1",
+    "eslint": "^7.5.0",
     "eslint-config-egg": "^8.0.1"
   },
   "engines": {
