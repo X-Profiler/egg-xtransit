@@ -10,13 +10,6 @@ class AgentBootHook {
   constructor(agent) {
     this.agent = agent;
     this.config = agent.config;
-
-    this.logger = {};
-    for (const method of [ 'info', 'warn', 'error', 'debug' ]) {
-      this.logger[method] = (message, ...args) => {
-        agent.logger[method](`[xtransit] ${message}`, ...args);
-      };
-    }
   }
 
   configWillLoad() {
@@ -39,9 +32,17 @@ class AgentBootHook {
     });
   }
 
-  async didLoad() {
+  async serverDidReady() {
     const { server, appId, appSecret } = this.config.xtransit;
     assert(server && appId && appSecret, 'xtransit config error, server, appId, appSecret must be passed in.');
+
+    // logger
+    this.logger = {};
+    for (const method of [ 'info', 'warn', 'error', 'debug' ]) {
+      this.logger[method] = (message, ...args) => {
+        this.agent.logger[method](`[xtransit] ${message}`, ...args);
+      };
+    }
 
     // start xtransit
     xtransit.start({
