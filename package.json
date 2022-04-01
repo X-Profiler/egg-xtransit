@@ -1,6 +1,6 @@
 {
   "name": "egg-xtransit",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "egg-plugin for xtransit",
   "eggPlugin": {
     "name": "xtransit"
