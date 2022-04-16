@@ -21,7 +21,6 @@ module.exports = appInfo => {
 
     logDir: 'xprofiler',
     logInterval: undefined,
-    docker: false,
     ipMode: false,
     libMode: true,
     errexp: /\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/i,
