@@ -1,6 +1,6 @@
 {
   "name": "egg-xtransit",
-  "version": "1.2.4",
+  "version": "2.0.0",
   "description": "egg-plugin for xtransit",
   "eggPlugin": {
     "name": "xtransit"
@@ -11,8 +11,8 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "xprofiler": "^1.4.0",
-    "xtransit": "^1.4.0"
+    "xprofiler": "^2.0.1",
+    "xtransit": "^2.0.1"
   },
   "devDependencies": {
     "assert-file": "^1.0.0",
