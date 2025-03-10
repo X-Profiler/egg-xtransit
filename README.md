@@ -3,15 +3,11 @@
 [![NPM version][npm-image]][npm-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
+[![Codecov branch](https://img.shields.io/codecov/c/github/X-Profiler/egg-xtransit/master)](https://codecov.io/gh/X-Profiler/egg-xtransit/branch/master)
+[![Continuous integration](https://github.com/X-Profiler/egg-xtransit/actions/workflows/nodejs.yml/badge.svg?branch=master)](https://github.com/X-Profiler/egg-xtransit/actions/workflows/nodejs.yml?query=branch:master)
 
 [npm-image]: https://img.shields.io/npm/v/egg-xtransit.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-xtransit
-[travis-image]: https://img.shields.io/travis/eggjs/egg-xtransit.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-xtransit
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-xtransit.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-xtransit?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-xtransit.svg?style=flat-square
-[david-url]: https://david-dm.org/x-profiler/egg-xtransit
 [snyk-image]: https://snyk.io/test/npm/egg-xtransit/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-xtransit
 [download-image]: https://img.shields.io/npm/dm/egg-xtransit.svg?style=flat-square
@@ -20,7 +16,7 @@
 ## Install
 
 ```bash
-$ npm i --save egg-xtransit
+npm i --save egg-xtransit
 ```
 
 ## Usage
@@ -53,3 +49,9 @@ Please open an issue [here](https://github.com/X-Profiler/egg-xtransit/issues).
 ## License
 
 [BSD-2-Clause](LICENSE)
+
+## Contributors
+
+[![Contributors](https://contrib.rocks/image?repo=X-Profiler/egg-xtransit)](https://github.com/X-Profiler/egg-xtransit/graphs/contributors)
+
+Made with [contributors-img](https://contrib.rocks).
