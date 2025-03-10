@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "assert-file": "^1.0.0",
-    "egg": "^2.27.0",
+    "egg": "3",
     "egg-bin": "6",
     "egg-mock": "^5.15.1",
     "eslint": "^7.5.0",
